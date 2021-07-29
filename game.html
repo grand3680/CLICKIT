@@ -1,0 +1,135 @@
+<!DockType html>
+
+<html>
+ <head>
+  <title> Кликер </title>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="css.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="icon" href="images/click.png" type="image/x-icon">
+  
+  <meta name='viewport' content='width=device-width,initial-scale=1'/>
+  <meta content='true' name='HandheldFriendly'/>
+  <meta content='width' name='MobileOptimized'/>
+  <meta content='yes' name='apple-mobile-web-app-capable'/>
+ </head>
+ <body>
+  <div class="preloader"></div>
+  
+  <!-- кликов за клик -->
+  <div id="Blink_All" class="">
+   <div id="element" class="">
+    <h2 id="total" title="Табло каторое показывает сколько ты кликаешь за Нажатие"> Clicks per click : 1</h2>
+    <h3 id="Auto_click" title="Количество купленных Авто кликеров"> You have Auto_Click : 0 </h3>
+	<h3 id="click_per_second" style="font-family: 'Press Start 2P';" title="Клики за секунду"> Clicks per second : 0</h3>
+
+    <!-- сумма всех кликов -->
+    <button title="Сумарное количество кликов и кнопка для получение их" type="button" id="button" onclick="clicker()">
+     <h1 id="h1" > Clicks made: 0 </h1>
+    </button><br>
+
+    <!-- вкладка магазина -->
+    <button type="button" id="Shop" title="магазин, при нажатии ты смотришь товары">
+     <img id="coin" alt="Магазин" src="images/coin.png" class="img">
+     <p> Shop </p>
+    </button>
+   </div>
+
+   <!-- задний фон store -->
+   <div title="магазин" id="background" class="store_backround" style="display: none;"></div>
+    <!-- товар в магазине  каторый увеличивает кликов за клик -->
+    <h1 title="товар в магазине  каторый увеличивает кликов за клик" style="display: none;" id="store">
+     <button id="upgrade" class="store" type="button"> 
+      <p id="price"> Level Up ↑ : 100 </p>
+     </button>
+    </h1>
+
+    <!-- авто кликер, кликает раз в сек -->
+    <h1 title="авто кликер, кликает раз в сек" style="display: none;" id="store_2">
+     <button style=" position: absolute; bottom: 500px;" id="upgrade_2" class="store" type="button"> 
+      <p id="price_2"> Auto Clicker ↑ : 10 </p>
+     </button>
+    </h1>
+	
+	<!-- Улучшение каторое улучшает авто кликер -->
+	<h1 title="улучшает авто кликер" style="display: none;" id="store_3">
+     <button style=" position: absolute; bottom: 355px;" id="upgrade_3" class="store" type="button"> 
+      <p id="price_3"> Upgrade Cliker ↑ : 1000 </p>
+     </button>
+    </h1>
+
+	<!-- Кнопка Back возращает обратно на главную -->
+    <h1 title="Кнопка Back возращает обратно на главную" id="back_store">
+     <button style="display: none; width: 150px; height: 100px; " class="store" id="back" >
+	  <p> Back </p>
+	 </button>
+    </h1>
+
+
+	<!-- кнопка след музыки -->
+   <button title="кнопка Для след музыки" id="Next" id="musical" class="music" type="button">
+    <img id="musical_img" src="images/note.png">
+   </button>
+   
+    <!-- Трек 1 -->
+    <audio loop="loop" id="audio">
+	 <source id="Music_Played" src="Music/music_1.mp3">
+ 	 Тег audio не поддерживается вашим браузером.
+   </audio>
+   
+    <!-- Трек 2 -->
+   <audio loop="loop" id="audio_2">>
+	 <source id="Music_Played_2" src="Music/music_2.mp3">
+ 	 Тег audio не поддерживается вашим браузером.
+   </audio>
+   
+    <!-- Трек 3 -->
+   <audio loop="loop" id="audio_3">>
+	 <source id="Music_Played_3" src="Music/music_3.mp3">
+ 	 Тег audio не поддерживается вашим браузером.
+   </audio>
+  
+   <!-- громче музыку -->
+   <button title="громче музыку" id="plass" type="button">
+    <img id="plas_img" src="images/Plass.png">
+   </button>
+  
+   <!-- тише музыку -->
+   <button title="тише музыку" id="minus" type="button">
+    <img id="minus_img" src="images/Minus.png">
+   </button>
+  <div>
+  
+  <!-- popUp окно в магазе показывает сколько не хватает денег -->
+   <div title="Окно Магазина" id="PopUp_Window" class="popUp_Store" style="display: none;"></div>
+   <button title="Закрыть окно" id="PopUp_Button" style="display: none;" >
+    <img id="PopUp_Img" class="Cross" src="images/Plass.png">
+   </button>
+   <h3 title="Показаетель сколько не хватает" style="display: none;"  id="Price_TXT"> You are lacking : </h3>
+   
+   
+   <!-- фон у Авторов или же popUp окно -->
+   <div title="Авторы" id="Autor_Backround" class="popUp" style="display: none;"></div>
+   <h1 id="Autor">
+    <button title="Авторы" style="display: none; width: 150px; height: 100px; " class="store" id="Autor_store"  type="button">
+	 <img id="Autor_img" src="images/Autors.png">
+	</button>
+   </h1>   
+   
+   <!-- Текст у Авторов -->
+   <h3 title="Текст Авторов" id="Autors_TXT" style="display: none;">
+    authors game: <br> designer - Stas <br> programmer - Kirill <br> <a id="LINK" target="_blank" href="https://vk.com/club206108059"> Vk group </a>
+   </h3>
+   
+   <!-- Крестик у Авторов -->
+   <button title="Выйти из Авторов" style="display: none;" id="Autor_button">
+    <img id="Autor_img_2" src="images/Plass.png">
+   </button>
+
+   
+  <script src="lol.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/0.8.0/Tone.min.js'></script>
+ </body>
+</html>
