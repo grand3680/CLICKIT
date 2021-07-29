@@ -1,1 +1,1 @@
-"This example Git text file" 
+"This example Git text file"
