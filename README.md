@@ -1,2 +1,2 @@
 # clickit
-Cliker on JS Html and CSS
+A cliker made with JS, HTML and CSS
