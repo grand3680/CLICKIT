@@ -61,7 +61,7 @@ button {
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden;
+ overflow: hidden;
 }
 
 #PopUp_Img {
@@ -91,7 +91,7 @@ button {
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden; 
+ overflow: hidden; 
  right: 1028px;
  bottom: 735px;
  z-index: 3000;
@@ -135,7 +135,7 @@ button {
 
 
 A:hover {
- color: #red;
+ color: red;
  font-size: 40px; 
 }
 
@@ -161,9 +161,9 @@ A:hover {
  width: 50px;
  height: 50px;	
  background-color: Transparent;
- background-repeat:no-repeat;
+ background-repeat: no-repeat;
  border: none;
- verflow: hidden; 
+ overflow: hidden; 
 }
 
 
@@ -216,7 +216,7 @@ h2{
  color: white;
  font-size: 25px; 
  padding-top: 20px; 
- text-shadow: 9px 10px 10px #696969; 4
+ text-shadow: 9px 10px 10px #696969;
  font-family: 'Press Start 2P';
 }
 
@@ -253,7 +253,7 @@ h2{
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden;  	
+ overflow: hidden;  	
 }
 
 
@@ -318,15 +318,15 @@ p {
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden; 	
+ overflow: hidden; 	
 }
 
 
-#plass {
+#plus {
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden; 
+ overflow: hidden; 
  position: absolute;
  bottom: 15px;   
  right: 130px;
@@ -342,7 +342,7 @@ p {
  background-color: Transparent;
  background-repeat:no-repeat;
  border: none;
- verflow: hidden;  
+ overflow: hidden;  
  position: fixed;
  z-index: 550;
 }
@@ -356,7 +356,7 @@ p {
 }
 
 
-#plas_img {
+#plus_img {
  width: 60зx;
  height: 60px; 	
  cursor: url('images/notes.cur'), auto;
@@ -369,7 +369,7 @@ p {
  background-repeat:no-repeat;
  border: none;
  cursor:pointer;
- verflow: hidden;  
+ overflow: hidden;  
  cursor: url('images/notes.cur'), auto;
 }
 
