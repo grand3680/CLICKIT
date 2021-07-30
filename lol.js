@@ -9,7 +9,7 @@ let audio = document.getElementById("audio"); /* трек 1 */
 let audio_2 = document.getElementById("audio_2"); /* трек 2 */
 let audio_3 = document.getElementById("audio_3"); /* трек 3 */
 
-let Volume_plass = document.getElementById("plass");
+let Volume_plus = document.getElementById("plus");
 let Volume_minus = document.getElementById("minus");
 let button = document.getElementById("button");
 let Next = document.getElementById("Next");
@@ -89,8 +89,8 @@ window.onload = function () {
 
 
 /* музыка громче*/
-function Plasss() {
- Volume_plass.addEventListener("click", function() {
+function Plus() {
+ Volume_plus.addEventListener("click", function() {
   audio.volume += 0.1;
   audio_2.volume += 0.1;
   audio_3.volume += 0.1;
@@ -99,7 +99,7 @@ function Plasss() {
 
 
 /* тише */
-function Minuss() {
+function Minus() {
  Volume_minus.addEventListener("click", function() {
   audio.volume -= 0.1;
   audio_2.volume -= 0.1;
@@ -324,8 +324,8 @@ shop();
 buy();
 buy_2();
 buy_3();
-Minuss();
-Plasss();
+Minus();
+Plus();
 back_button();
 cross();
 Autors();
