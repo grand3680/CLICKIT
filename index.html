@@ -2,7 +2,7 @@
 
 <html>
  <head>
-  <title>Clickr</title>
+  <title> Кликер </title>
   <meta charset="UTF-8">
   
   <link rel="stylesheet" href="css.css">
@@ -60,6 +60,7 @@
      </button>
     </h1>
 
+
 	<!-- Кнопка Back возращает обратно на главную -->
     <h1 title="Кнопка Back возращает обратно на главную" id="back_store">
      <button style="display: none; width: 150px; height: 100px; " class="store" id="back" >
@@ -92,8 +93,8 @@
    </audio>
   
    <!-- громче музыку -->
-   <button title="громче музыку" id="plus" type="button">
-    <img id="plus_img" src="images/Plus.png">
+   <button title="громче музыку" id="plass" type="button">
+    <img id="plas_img" src="images/Plass.png">
    </button>
   
    <!-- тише музыку -->
@@ -105,7 +106,7 @@
   <!-- popUp окно в магазе показывает сколько не хватает денег -->
    <div title="Окно Магазина" id="PopUp_Window" class="popUp_Store" style="display: none;"></div>
    <button title="Закрыть окно" id="PopUp_Button" style="display: none;" >
-    <img id="PopUp_Img" class="Cross" src="images/Plus.png">
+    <img id="PopUp_Img" class="Cross" src="images/Plass.png">
    </button>
    <h3 title="Показаетель сколько не хватает" style="display: none;"  id="Price_TXT"> You are lacking : </h3>
    
@@ -119,15 +120,22 @@
    </h1>
 
    <!-- Текст у Авторов -->
-   <h3 align="center" title="Текст Авторов" id="Autors_TXT" style="display: none;">
-    <br>Game authors: <br><u>Stas</u> - designer<br><u>Kirill</u> - programmer<br><u>???</u> - programmer<br><a id="LINK" target="_blank" href="https://vk.com/club206108059">VK group</a> <br> <a id="LINK" target="_blank" href="https://discord.gg/gMQPjFHfCQ">Discord server</a>
+   <h3 align="center" title="Текст Авторов" id="Autors_TXT" style="display: none;"> 
+    <br>Game authors: <br><u>Stas</u> - designer<br><u>Kirill</u> - programmer<br><br><a id="LINK" target="_blank" href="https://vk.com/club206108059">VK group</a></a>
    </h3>  
    
    <!-- Крестик у Авторов -->
    <button title="Выйти из Авторов" style="display: none;" id="Autor_button">
-    <img id="Autor_img_2" src="images/Plus.png">
+    <img id="Autor_img_2" src="images/Plass.png">
    </button>
 
+
+
+
+   <!-- кнопка reset -->
+   <button style="display: none;" title="перезапускает игру и делает авто клики сильнее " id="reset_button" class="store" type="button"> 
+    <p id="reset_txt" onclick="reset()"> reset </p>    
+   </button>
    
   <script src="lol.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/0.8.0/Tone.min.js'></script>
