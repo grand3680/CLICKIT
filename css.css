@@ -1,0 +1,390 @@
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #222222 url(images/Backround.gif)no-repeat center;
+  cursor: progress;
+  text-align: center;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+
+.loaded .preloader {
+  display: none;
+}
+
+
+button {
+ outline:none
+}
+
+
+#button {
+ color: White;
+ height: 150px;
+ width: 800px;
+ font-size: 18px;
+ margin-top: 90px;
+ background-color: #B22222;
+ border-radius: 50px;
+ padding: 10px 5px 5px 10px;
+ word-spacing: -20px;
+ font-family: 'Press Start 2P';
+ cursor: url('images/cursor_15.cur'), auto;
+ padding-top: 10px;
+ text-align: center;
+ text-shadow: 9px 10px 10px black;
+}
+
+
+#back {
+ position: absolute;
+ bottom: 17px;
+ right: 333px;
+ z-index: 1001; 
+}
+
+
+#Autor_store {
+ position: absolute;
+ right: 318px;
+ z-index: 1001; 
+ bottom: 140px;
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden;
+}
+
+
+#PopUp_Img {
+ transform: rotate(45deg);
+ width: 40px;
+ height: 40px;
+ z-index: 6000;  
+}
+
+
+#Price_TXT {
+ color: White;
+ font-size: 18px;
+ font-family: 'Press Start 2P'; 
+ position: absolute;
+ right: 780px;
+ bottom: 700px;
+ z-index: 2000; 
+ word-spacing: -10;
+ width: 290px;
+ height: 25px;
+}
+
+
+#PopUp_Button {
+ position: absolute;
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden; 
+ right: 1028px;
+ bottom: 735px;
+ z-index: 3000;
+}
+
+
+#Autor_img {
+ width: 100px;
+ height: 100px;
+}
+
+
+.popUp {
+ background-color: #292929;
+ width: 500px;
+ height: 500px;
+ position: absolute;
+ right: 680px;
+ bottom: 330px;
+ border-radius: 50px; 
+}
+
+
+.popUp_store {
+ background-color: #292929;
+ width: 350px;
+ height: 250px;
+ position: absolute;
+ right: 750px;
+ bottom: 550px;
+ z-index: 2000; 
+ border-radius: 50px; 	
+}
+
+
+#LINK { 
+ color: #FFD700;
+ font-size: 30px;
+ text-decoration: none;
+}
+
+
+#Autors_TXT {
+ color: white;
+ font-size: 20px;
+ position: absolute;
+ right: 730px;
+ bottom: 550px;
+ z-index: 10000;  
+ padding-top: 20px;
+ font-family: 'Press Start 2P'; 
+}
+
+
+#Autor_button {
+ position: absolute;
+ right: 1120px;
+ bottom: 760px; 
+ z-index: 2500;  
+ width: 60px;
+ height: 60px;	
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden; 
+}
+
+
+#Autor_img_2 {
+ transform: rotate(45deg);
+ width: 40px;
+ height: 40px;
+}
+
+
+body {
+  cursor: url('images/sword.cur'), auto;
+  text-align: center; 
+  background: #222222 url(images/Backround_body.gif)no-repeat center;
+  background-size: 100%; 
+  user-select: none;
+}
+
+
+.blur {
+ webkit-filter: blur(5px);
+ moz-filter: blur(5px);
+ o-filter: blur(5px);
+ ms-filter: blur(5px);
+ filter: blur(5px);
+}
+
+
+h2{
+ font-size: 70px;
+ color: white;
+ padding-top: 30px;
+ word-spacing: -30px;
+ margin-top: 100px;
+ font-family: 'Press Start 2P';
+}
+
+
+#Auto_click {
+ color: white;
+ font-size: 35px; 
+ padding-top: 30px; 
+ word-spacing: -20px; 
+ text-shadow: 9px 10px 10px #696969; 
+ font-family: 'Press Start 2P';
+}
+
+
+#click_per_second {
+ color: white;
+ font-size: 25px; 
+ padding-top: 20px; 
+ text-shadow: 9px 10px 10px #696969; 4
+ font-family: 'Press Start 2P';
+}
+
+
+.store {
+ position: absolute;
+ bottom: 650px;
+ right: 30px;
+ background-color: #B22222; 
+ height: 110px;
+ width: 450px;
+ border-radius: 50px;
+ font-size: 20px; 
+ color: #FFD700;
+ font-family: 'Press Start 2P';
+ cursor: url('images/cursor_gold.cur'), auto;
+ text-shadow: 8px 10px 14px black;
+ z-index: 550;
+}
+
+.store_backround {
+ position: absolute;
+ bottom: -100px;
+ right: 0px;
+ background: #222222;
+ width: 500px;
+ height: 4000px;
+ z-index: 100;
+ position: fixed;
+}
+
+
+#reset_button {
+ position: absolute;
+ bottom: 15px;
+ right: 160px;
+ width: 150px;
+ height: 100px;
+ color: white;
+ z-index: 200;
+ background-color: #B22222;  
+ border-radius: 50px;
+}
+
+
+#reset_txt {
+ font-size: 20px;
+ font-family: 'Press Start 2P';
+ color: #FFD700;
+}
+
+
+.hidden {
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden;  	
+}
+
+
+#shop {
+ background-color: #B22222;
+ padding-top: 30px;
+ height: 120px;
+ width: 300px;
+ border-radius: 50px;
+ margin-top: 30px;
+ margin-right: 30px;
+ font-size: 30px;  
+ color: White;
+ font-family: 'Press Start 2P'; 
+ cursor: url('images/cursor_15.cur'), auto;
+ text-shadow: 9px 10px 10px black;
+}
+
+
+#price {
+ font-size: 15px; 
+ word-spacing: -15px; 
+ font-size: 25px;
+ padding-bottom: 10px; 
+}
+
+button:hover {
+ transform: scale(1.1) translateY(-10px);
+}
+
+
+.store:hover {
+ background-color: #FFD789;
+ color: #FFD700;
+}
+
+
+p {
+ padding-top: 8px; 
+}
+
+
+#coin {
+ margin-left: 20px;	
+ margin-bottom: 25px;	
+ width: 60px;
+ height: 60px;
+ float: left;
+}
+
+.Music {
+ position: absolute;
+ bottom: 15px;
+ right: 15px;
+ width: 100px;
+ height: 100px; 
+ position: fixed;
+ z-index: 550;
+}
+
+#Next {
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden; 	
+}
+
+
+#plass {
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden; 
+ position: absolute;
+ bottom: 132px;
+ right: 15px;
+ position: fixed;
+ z-index: 550;
+}
+
+
+#minus {
+ position: absolute;
+ bottom: 210px;
+ right: 16px;
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ verflow: hidden;  
+ position: fixed;
+ z-index: 550;
+}
+
+
+#minus_img {
+ width: 60px;
+ height: 50px; 	
+ cursor: url('images/notes.cur'), auto;
+ z-index: 550;
+}
+
+
+#plas_img {
+ width: 60зx;
+ height: 60px; 	
+ cursor: url('images/notes.cur'), auto;
+ z-index: 550;
+}
+
+
+#musical {
+ background-color: Transparent;
+ background-repeat:no-repeat;
+ border: none;
+ cursor:pointer;
+ verflow: hidden;  
+ cursor: url('images/notes.cur'), auto;
+}
+
+
+
+
