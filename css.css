@@ -1,16 +1,16 @@
 .preloader {
-  /*фиксированное позиционирование*/
+  /*fixed positioning*/
   position: fixed;
-  /* координаты положения */
+  /* position coordinates */
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  /* фоновый цвет элемента */
+  /* item background color */
   background: #222222 url(images/Backround.gif)no-repeat center;
   cursor: progress;
   text-align: center;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  /* place the block above all elements on the page (this value should be larger than that of any other positioned element on the page) */
   z-index: 1001;
 }
 
