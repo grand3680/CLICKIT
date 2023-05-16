@@ -2,7 +2,7 @@
 
 <html>
  <head>
-  <title> Кликер </title>
+  <title> Clicker </title>
   <meta charset="UTF-8">
   
   <link rel="stylesheet" href="css.css">
@@ -18,122 +18,122 @@
  <body>
   <div class="preloader"></div>
   
-  <!-- кликов за клик -->
+  <!-- clicks per click -->
   <div id="Blink_All" class="">
    <div id="element" class="">
-    <h2 id="total" title="Табло каторое показывает сколько ты кликаешь за Нажатие"> Clicks per click : 1</h2>
-    <h3 id="Auto_click" title="Количество купленных Авто кликеров"> You have Auto_Click : 0 </h3>
+    <h2 id="total" title="A scoreboard that shows how much you click per Click"> Clicks per click : 1</h2>
+    <h3 id="Auto_click" title="Number of Auto clickers purchased"> You have Auto_Click : 0 </h3>
 	<h3 id="click_per_second" style="font-family: 'Press Start 2P';" title="Клики за секунду"> Clicks per second : 0</h3>
 
-    <!-- сумма всех кликов -->
-    <button title="Сумарное количество кликов и кнопка для получение их" type="button" id="button" onclick="clicker()">
+    <!-- sum of all clicks -->
+    <button title="Total number of clicks and a button to get them" type="button" id="button" onclick="clicker()">
      <h1 id="h1" > Clicks made: 0 </h1>
     </button><br>
 
-    <!-- вкладка магазина -->
+    <!-- store tab -->
     <button type="button" id="Shop" title="магазин, при нажатии ты смотришь товары">
      <img id="coin" alt="Магазин" src="images/coin.png" class="img">
      <p> Shop </p>
     </button>
    </div>
 
-   <!-- задний фон store -->
+   <!-- backdrop store -->
    <div title="магазин" id="background" class="store_backround" style="display: none;"></div>
-    <!-- товар в магазине  каторый увеличивает кликов за клик -->
-    <h1 title="товар в магазине  каторый увеличивает кликов за клик" style="display: none;" id="store">
+    <!-- product in the store which increases clicks per click -->
+    <h1 title="product in the store which increases clicks per click" style="display: none;" id="store">
      <button id="upgrade" class="store" type="button"> 
       <p id="price"> Level Up ↑ : 100 </p>
      </button>
     </h1>
 
-    <!-- авто кликер, кликает раз в сек -->
-    <h1 title="авто кликер, кликает раз в сек" style="display: none;" id="store_2">
+    <!-- auto clicker, clicks once per sec -->
+    <h1 title="auto clicker, clicks once per sec" style="display: none;" id="store_2">
      <button style=" position: absolute; bottom: 500px;" id="upgrade_2" class="store" type="button"> 
       <p id="price_2"> Auto Clicker ↑ : 10 </p>
      </button>
     </h1>
 	
-	<!-- Улучшение каторое улучшает авто кликер -->
-	<h1 title="улучшает авто кликер" style="display: none;" id="store_3">
+	<!-- Improvement that improves the auto clicker -->
+	<h1 title="Improves auto clicker" style="display: none;" id="store_3">
      <button style=" position: absolute; bottom: 355px;" id="upgrade_3" class="store" type="button"> 
       <p id="price_3"> Upgrade Cliker ↑ : 1000 </p>
      </button>
     </h1>
 
 
-	<!-- Кнопка Back возращает обратно на главную -->
-    <h1 title="Кнопка Back возращает обратно на главную" id="back_store">
+	<!-- The Back button takes you back to the home page -->
+    <h1 title="The Back button takes you back to the home page" id="back_store">
      <button style="display: none; width: 150px; height: 100px; " class="store" id="back" >
 	  <p> Back </p>
 	 </button>
     </h1>
 
 
-	<!-- кнопка след музыки -->
-   <button title="кнопка Для след музыки" id="Next" id="musical" class="music" type="button">
+	<!-- music track button -->
+   <button title="button For track music" id="Next" id="musical" class="music" type="button">
     <img id="musical_img" src="images/note.png">
    </button>
    
     <!-- Трек 1 -->
     <audio loop="loop" id="audio">
 	 <source id="Music_Played" src="Music/music_1.mp3">
- 	 Тег audio не поддерживается вашим браузером.
+ 	 The audio tag is not supported by your browser.
    </audio>
    
     <!-- Трек 2 -->
    <audio loop="loop" id="audio_2">>
 	 <source id="Music_Played_2" src="Music/music_2.mp3">
- 	 Тег audio не поддерживается вашим браузером.
+ 	 The audio tag is not supported by your browser.
    </audio>
    
     <!-- Трек 3 -->
    <audio loop="loop" id="audio_3">>
 	 <source id="Music_Played_3" src="Music/music_3.mp3">
- 	 Тег audio не поддерживается вашим браузером.
+ 	 The audio tag is not supported by your browser.
    </audio>
   
-   <!-- громче музыку -->
-   <button title="громче музыку" id="plass" type="button">
+   <!-- louder music -->
+   <button title="louder music" id="plass" type="button">
     <img id="plas_img" src="images/Plass.png">
    </button>
   
-   <!-- тише музыку -->
-   <button title="тише музыку" id="minus" type="button">
+   <!-- quieter music -->
+   <button title="quieter music" id="minus" type="button">
     <img id="minus_img" src="images/Minus.png">
    </button>
   <div>
   
-  <!-- popUp окно в магазе показывает сколько не хватает денег -->
-   <div title="Окно Магазина" id="PopUp_Window" class="popUp_Store" style="display: none;"></div>
-   <button title="Закрыть окно" id="PopUp_Button" style="display: none;" >
+  <!-- The popUp window in the store shows how much money is missing -->
+   <div title="Store Window" id="PopUp_Window" class="popUp_Store" style="display: none;"></div>
+   <button title="Close the window" id="PopUp_Button" style="display: none;" >
     <img id="PopUp_Img" class="Cross" src="images/Plass.png">
    </button>
-   <h3 title="Показаетель сколько не хватает" style="display: none;"  id="Price_TXT"> You are lacking : </h3>
+   <h3 title="Indicator of how much is missing" style="display: none;"  id="Price_TXT"> You are lacking : </h3>
    
    
-   <!-- фон у Авторов или же popUp окно -->
-   <div title="Авторы" id="Autor_Backround" class="popUp" style="display: none;"></div>
+   <!-- background at the Authors or popUp window -->
+   <div title="Authors" id="Autor_Backround" class="popUp" style="display: none;"></div>
    <h1 id="Autor">
-    <button title="Авторы" style="display: none; width: 150px; height: 100px; " class="store" id="Autor_store"  type="button">
+    <button title="Authors" style="display: none; width: 150px; height: 100px; " class="store" id="Autor_store"  type="button">
 	 <img id="Autor_img" src="images/Autors.png">
 	</button>
    </h1>
 
-   <!-- Текст у Авторов -->
-   <h3 align="center" title="Текст Авторов" id="Autors_TXT" style="display: none;"> 
+   <!-- Text from the Authors -->
+   <h3 align="center" title="Text from the Authorsв" id="Autors_TXT" style="display: none;"> 
     <br>Game authors: <br><u>Stas</u> - designer<br><u>Kirill</u> - programmer<br><br><a id="LINK" target="_blank" href="https://vk.com/club206108059">VK group</a></a>
    </h3>  
    
-   <!-- Крестик у Авторов -->
-   <button title="Выйти из Авторов" style="display: none;" id="Autor_button">
+   <!-- Cross at the Authors -->
+   <button title="Get Out of Authorship" style="display: none;" id="Autor_button">
     <img id="Autor_img_2" src="images/Plass.png">
    </button>
 
 
 
 
-   <!-- кнопка reset -->
-   <button style="display: none;" title="перезапускает игру и делает авто клики сильнее " id="reset_button" class="store" type="button"> 
+   <!-- reset button -->
+   <button style="display: none;" title="restarts the game and makes auto clicks stronger " id="reset_button" class="store" type="button"> 
     <p id="reset_txt" onclick="reset()"> reset </p>    
    </button>
    
