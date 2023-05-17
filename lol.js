@@ -4,9 +4,9 @@ let totalId = document.getElementById("total");
 
 
 /* music */
-let audio = document.getElementById("audio");     /* трек 1 */
-let audio_2 = document.getElementById("audio_2"); /* трек 2 */
-let audio_3 = document.getElementById("audio_3"); /* трек 3 */
+let audio = document.getElementById("audio");     /* track 1 */
+let audio_2 = document.getElementById("audio_2"); /* track 2 */
+let audio_3 = document.getElementById("audio_3"); /* track 3 */
 
 let Volume_plass = document.getElementById("plass");
 let Volume_minus = document.getElementById("minus");
@@ -80,7 +80,7 @@ function clicker() {
 }
 
 
-/* put the value 4900*/.
+/* put the value 4900*/
 /* page preloader*/
 window.onload = function () {
  document.body.classList.add('loaded_hiding');
@@ -91,7 +91,7 @@ window.onload = function () {
 }
 
 
-/* music louder /*
+/* music louder */
 function Plasss() {
  Volume_plass.addEventListener("click", function() {
   audio.volume += 0.1;
