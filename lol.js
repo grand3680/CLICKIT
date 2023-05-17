@@ -1,9 +1,9 @@
-/* все переменные */
+/* all variables */
 let h1Td = document.getElementById("h1");
 let totalId = document.getElementById("total");
 
 
-/* музыка */
+/* music */
 let audio = document.getElementById("audio");     /* трек 1 */
 let audio_2 = document.getElementById("audio_2"); /* трек 2 */
 let audio_3 = document.getElementById("audio_3"); /* трек 3 */
@@ -14,7 +14,7 @@ let button = document.getElementById("button");
 let Next = document.getElementById("Next");
 
 
-/* магазин */
+/* music */
 let storeId = document.getElementById("store");
 let store_2Id = document.getElementById("store_2");
 let store_3Id = document.getElementById("store_3");
@@ -32,7 +32,7 @@ let Auto_Click = document.getElementById("Auto_click");
 let reset_button = document.getElementById("reset_button");  
 
 
-/* Авторы */
+/* Authors */
 let Autor_Backround = document.getElementById("Autor_Backround");
 let Autor_img_2 = document.getElementById("Autor_img_2");
 let Autor_button = document.getElementById("Autor_button");
@@ -40,13 +40,13 @@ let Autors_TXT = document.getElementById("Autors_TXT");
 let Autor_store = document.getElementById("Autor_store");
 
 
-/* ПопАп окно */
+/* Popup window */
 let PopUp_Window = document.getElementById("PopUp_Window");
 let PopUp_Button = document.getElementById("PopUp_Button");
 let Price_TXT = document.getElementById("Price_TXT");
 
 
-/* апгрейд */
+/* upgrade */
 let upgradeId = document.getElementById("upgrade");
 let upgrade_2Id = document.getElementById("upgrade_2");
 let upgrade_3Id = document.getElementById("upgrade_3");
@@ -55,33 +55,33 @@ let upgrade_3Id = document.getElementById("upgrade_3");
 let flag_2 = true;
 
 
-/* стоимость вещей */
-let numberr = 1; /* количество кликов за клик */
-let counter = 0; /* сумма кликов */
-let price = 100; /* стоимость level up */
-let price_2 = 10;/* стоимость авто клика */
+/* item value */
+let numberr = 1; /* number of clicks per click */
+let counter = 0; /* amount of clicks */
+let price = 100; /* cost level up */
+let price_2 = 10;/* auto click cost */
 let price_3 = 1000;/*  */
-let Auto_Count = 0; /* количество авто кликов */
-let numeric = 0.5; /* сколько будет кликать 1 авто кликер */
+let Auto_Count = 0; /* number of auto clicks */
+let numeric = 0.5; /* how much one auto clicker will click */
 let numberrr = 1;
 
 
-let base_price_1 = price; /* базовая цена 1*/
-let base_price_2 = price_2; /* базовая цена 2*/
-let base_price_3 = price_3; /* базовая цена 3*/
+let base_price_1 = price; /* base price 1*/
+let base_price_2 = price_2; /* base price 2*/
+let base_price_3 = price_3; /* base price 3*/
 
 
-/* функции */
-/* функция клика на глав кнопку */
+/* functions */
+/* main button click function */
 function clicker() {
  counter += numberr;
- /* изменение контента переменной */
+ /* change the content of the variable */
  h1Td.textContent = "Clicks made: " + counter;
 }
 
 
-/* поставить значение 4900*/
-/* preloader странички*/
+/* put the value 4900*/.
+/* page preloader*/
 window.onload = function () {
  document.body.classList.add('loaded_hiding');
  window.setTimeout(function () {
@@ -91,7 +91,7 @@ window.onload = function () {
 }
 
 
-/* музыка громче*/
+/* music louder /*
 function Plasss() {
  Volume_plass.addEventListener("click", function() {
   audio.volume += 0.1;
@@ -101,7 +101,7 @@ function Plasss() {
 }
 
 
-/* тише */
+/* quieter */
 function Minuss() {
  Volume_minus.addEventListener("click", function() {
   audio.volume -= 0.1;
@@ -111,7 +111,7 @@ function Minuss() {
 }
 
 var item = 0;
-/* след музыка */
+/* next music */
 function __Next__() {
  Next.addEventListener("click", function() {  
   item += 1;
@@ -141,7 +141,7 @@ function __Next__() {
 
 
 function shop() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  shopId.addEventListener("click", function() {
   storeId.style.display="inline"; 	
   store_2Id.style.display="inline"; 
@@ -156,11 +156,11 @@ function shop() {
 
 function reset() {
   if (counter >= 10000) {
-   if (confirm("Вы точно хотите обнулировать прогресс ?") == true) {
+   if (confirm("Are you sure you want to zero your progress ?") == true) {
     counter = 0; /* сумма кликов */
-    price = base_price_1; /* стоимость level up */
-    price_2 = base_price_2;/* стоимость авто клика */
-    price_3 = base_price_3;/* усиление автокликера */
+    price = base_price_1; /* cost level up */
+    price_2 = base_price_2;/* auto click cost */
+    price_3 = base_price_3;/* auto clicker enhancement */
     
     priceId.textContent = " Level Up ↑ : " + price;
     price_2Id.textContent = " Auto Clicker : " + price_2;    
@@ -169,8 +169,8 @@ function reset() {
 
 
 
-    Auto_Count = 0; /* количество авто кликов */
-    numeric = 0.5; /* сколько будет кликать 1 авто кликер */
+    Auto_Count = 0; /* number of auto clicks */
+    numeric = 0.5; /* How much will one auto clicker click */
     numberrr = 1;
     numberr = 1;
     flag_2 = false;
@@ -186,9 +186,9 @@ function reset() {
   }
 }
 
- /* кнопка каторая закрывает всё в магазиине */
+ /* the button that closes everything in the store */
 function back_button() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  button_back.addEventListener("click", function() {
   storeId.style.display="none"; 	
   store_2Id.style.display="none";
@@ -208,9 +208,9 @@ function back_button() {
 }
 
 
- /* вкладка авторы */
+ /* authors tab */
 function Autors() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  Autor_store.addEventListener("click", function() {
   Autor_button.style.display="inline";
   Autor_Backround.style.display="inline";
@@ -223,9 +223,9 @@ function Autors() {
  });
 }
 
- /* кнопка каторая закрывает вкладку авторы */
+ /* the button that closes the authors tab */
 function cross() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  Autor_button.addEventListener("click", function() {
     Autor_button.style.display="none";
     Autor_Backround.style.display="none";
@@ -253,7 +253,7 @@ function PopUp(money) {
 }
 
 
-/* функция авто кликера */
+/* auto clicker function */
 function Auto_clicker() {
  for (let i = 0; i < 1; i++) {
   if (flag_2 == true) {
@@ -268,13 +268,13 @@ function Auto_clicker() {
 
 
 function buy_3() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  upgrade_3Id.addEventListener("click", function() {
  
  if (counter >= price_3) {
    counter -= price_3;   
    numberrr += 1;   
-   price_3 = Math.trunc(base_price_3 * 1.15 ** numberrr); /* увеличиваем цену в 2раза */
+   price_3 = Math.trunc(base_price_3 * 1.15 ** numberrr); /* doubling the price */
    h1Td.textContent = "Clicks made: " + counter;
    price_3Id.textContent = "Upgrade Cliker ↑ : " + price_3;
  } else {
@@ -286,23 +286,23 @@ function buy_3() {
 
 
 function buy() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  upgradeId.addEventListener("click", function() {
 
-  /* проверка на нехватку кликов */
+  /* Check for lack of clicks */
  if (counter >= price) {
-    /* увеличиваем за клик на 1 */
+    /* increase per click by 1 */
    numberr += 1; 
-    /* добавляем  к глав счётчику */
+    /* add to the main counter */
    totalId.textContent = "Clicks per click : " + numberr; 
    
-    /* отнимаем сумму от кол-во кликов */
+    /* subtract the amount from the number of clicks */
    counter -= price;   
-   /* умножаем стоимость на 1.15 */
+   /* multiply the cost by 1.15 */
    price = Math.trunc(base_price_1 * 1.15 ** numberr);
-   /* показываем сколько у нас сейчас кликов */
+   /* show how many clicks we have now */
    h1Td.textContent = "Clicks made: " + Math.trunc(counter);
-   /* показываем визиально сколько стоят сейчас улучшение */
+   /* We show you how much the improvements are worth now */
    priceId.textContent = " Level Up ↑ : " + price;
   
   } else {
@@ -314,13 +314,13 @@ function buy() {
 
 
 function buy_2() {
- /* ивент по нажатию клика на кнопку */
+ /* click event */
  upgrade_2Id.addEventListener("click", function() {
  
  if (counter >= price_2) {
    counter -= price_2;   
    Auto_Count += 1;   
-   price_2 = Math.trunc(base_price_2 * 1.30 ** Auto_Count); /* увеличиваем цену в половину раз и убираем дроби */
+   price_2 = Math.trunc(base_price_2 * 1.30 ** Auto_Count); /* increase the price by half and remove the fractions */
    h1Td.textContent = "Clicks made: " + counter;
    price_2Id.textContent = " Auto Clicker : " + price_2;    
 
@@ -341,8 +341,8 @@ function buy_2() {
 }
 
 
- /* звук для кнопки 
- ps: просто нагло скопировал с энета потому-что не знал как это сделать даже примерно */
+ /* sound for the button 
+ ps: I just brazenly copied it from the net because I didn't know how to do it even approximately */
 function setupSynth() {
  window.synth = new Tone.Synth({
   oscillator: {
@@ -374,7 +374,7 @@ button.addEventListener('touchstart', function(e) {
 button.addEventListener('mousedown', boopMe);
 
 
-/* вызов функции */
+/* function call */
 shop();
 buy();
 buy_2();
